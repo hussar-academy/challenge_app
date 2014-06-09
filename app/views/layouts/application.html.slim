@@ -6,4 +6,10 @@ html
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   body
+    header
+      - if flash.present?
+        .flash
+          - flash.each do |key, message|
+            div class= "flash-messages #{key}"
+              p= message
     = yield
