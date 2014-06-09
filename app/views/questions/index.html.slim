@@ -1,0 +1,10 @@
+h1 Listing questions
+
+- @questions.each do |question|
+  .question
+    .title= link_to question.title, question_path(question)
+    .details= "Created on #{l(question.created_at, format: :long)}"
+
+br
+
+= link_to 'New Question', new_question_path
