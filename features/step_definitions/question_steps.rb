@@ -6,7 +6,10 @@ When(/^I create a question$/) do
 end
 
 Then(/^I should see this question on listing$/) do
-  visit questions_path
   expect(page).to have_content "A simple question"
   expect(page).to have_content "by #{@user}"
+end
+
+Given(/^There is a question$/) do
+  @question = create(:question)
 end

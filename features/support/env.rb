@@ -65,6 +65,8 @@ if respond_to?(:World)
   World(SpecHelpers::Database)
 end
 
+include SpecHelpers::Database
+
 Around do |scenario, block|
   config_cleaner { block.call }
 end
