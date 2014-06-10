@@ -22,6 +22,11 @@ Then(/^I should not see this question$/) do
   expect(page).not_to have_content "by #{@user}"
 end
 
-Given(/^There is a question$/) do
+Given(/^There is a question/) do
   @question = create(:question)
 end
+
+Then(/^I do not see "(.*?)" link on this question's page$/) do |link|
+  expect(page).not_to have_content link
+end
+
