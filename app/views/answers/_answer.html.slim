@@ -1,0 +1,8 @@
+.answer
+  .contents= answer.contents
+  .details
+    '  Answered on
+    = l(answer.created_at, format: :long)
+    '  by
+    = answer.user
+
