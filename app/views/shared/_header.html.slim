@@ -9,7 +9,7 @@ header
   '  |
   - if user_signed_in?
     ' Welcome,
-    = current_user.email
+    = current_user
     '  |
     = link_to "Edit profile", edit_user_registration_path
     '  |
