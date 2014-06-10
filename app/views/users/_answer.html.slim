@@ -1,8 +1,6 @@
 .answer
+  .question-title= link_to answer.question.title, question_path(answer.question)
   .contents= answer.contents
   .details
     '  Answered on
     = l(answer.created_at, format: :long)
-    '  by
-    = link_to answer.user, user_path(answer.user)
-

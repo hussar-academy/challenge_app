@@ -1,0 +1,20 @@
+.user
+  h2= @user
+
+  .questions
+    h3 Questions
+
+    - if @user.questions.any?
+      - @user.questions.each do |question|
+        = render 'question', question: question
+    - else
+      '  This user has not created any questions.
+
+  .answers
+    h3 Answers
+
+    - if @user.answers.any?
+      - @user.answers.each do |answer|
+        = render 'answer', answer: answer
+    - else
+      '  This user has not added any answers.
