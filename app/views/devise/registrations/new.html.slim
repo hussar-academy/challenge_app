@@ -1,0 +1,20 @@
+h1 Sign up
+
+= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f|
+  = devise_error_messages!
+
+  .field
+    label= f.label :email
+    = f.email_field :email, autofocus: true
+
+  .field
+    label= f.label :password
+    = f.password_field :password, autocomplete: 'off'
+
+  .field
+    label= f.label :password_confirmation
+    = f.password_field :password_confirmation, autocomplete: 'off'
+
+  div
+    = f.submit "Sign up"
+

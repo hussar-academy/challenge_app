@@ -1,0 +1,21 @@
+header
+  - if flash.present?
+    .flash
+      - flash.each do |key, message|
+        div class= "flash-messages #{key}"
+          p= message
+
+  = link_to "Stack Overflow", root_path
+  '  |
+  - if user_signed_in?
+    ' Welcome,
+    = current_user.email
+    '  |
+    = link_to "Edit profile", edit_user_registration_path
+    '  |
+    = link_to "Sign out", destroy_user_session_path, method: :delete
+  - else
+    = link_to "Sign in", new_user_session_path
+    '  |
+    = link_to "Sign up", new_user_registration_path
+
