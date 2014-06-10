@@ -20,6 +20,3 @@ Then(/^I should not see the answer on question's page$/) do
   expect(page).not_to have_content("by #{@user}")
 end
 
-And(/^I should see the error message$/) do
-  expect(page).to have_content("There was an error when")
-end
