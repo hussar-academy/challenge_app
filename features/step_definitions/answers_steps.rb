@@ -20,3 +20,6 @@ Then(/^I should not see the answer on question's page$/) do
   expect(page).not_to have_content("by #{@user}")
 end
 
+And(/^There is answer to that question$/) do
+  @answer = create(:answer, question: @question)
+end

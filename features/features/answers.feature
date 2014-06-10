@@ -14,3 +14,4 @@ Feature: Answering questions
      When I answer this question with empty contents
      Then I should not see the answer on question's page
       And I should see the error message
+

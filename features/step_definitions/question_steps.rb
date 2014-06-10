@@ -30,3 +30,10 @@ Then(/^I do not see "(.*?)" link on this question's page$/) do |link|
   expect(page).not_to have_content link
 end
 
+Given(/^I created a question$/) do
+  @question = create(:question, user: @user)
+end
+
+When(/^I am on question's page$/) do
+  visit question_path(@question)
+end
