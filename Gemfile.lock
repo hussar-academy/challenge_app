@@ -194,6 +194,7 @@ DEPENDENCIES
   cucumber-rails (~> 1.4.1)
   database_cleaner (~> 1.2.0)
   devise
+  factory_girl
   factory_girl_rails (~> 4.2.0)
   jbuilder (~> 2.0)
   jquery-rails

@@ -31,6 +31,7 @@ group :test do
   gem "poltergeist",        "~> 1.5.0"
   gem "factory_girl_rails", "~> 4.2.0"
   gem "cucumber-rails",     "~> 1.4.1", require: false
+  gem "factory_girl"
   gem "rspec-rails"
 end
 

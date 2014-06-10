@@ -7,6 +7,8 @@
 require 'cucumber/rails'
 require 'capybara/poltergeist'
 
+Dir[Rails.root.join("spec/support/**/*.rb")].each { |f| require f }
+
 # Capybara defaults to CSS3 selectors rather than XPath.
 # If you'd prefer to use XPath, just uncomment this line and adjust any
 # selectors in your step definitions to use the XPath syntax.
@@ -57,18 +59,12 @@ end
 # See https://github.com/cucumber/cucumber-rails/blob/master/features/choose_javascript_database_strategy.feature
 Cucumber::Rails::Database.javascript_strategy = :truncation
 
+if respond_to?(:World)
+  World(FactoryGirl::Syntax::Methods)
+  World(SpecHelpers::Authorization)
+  World(SpecHelpers::Database)
+end
+
 Around do |scenario, block|
-  begin
-    DatabaseCleaner.strategy = :truncation
-    DatabaseCleaner.start
-
-    yield
-  ensure
-    Capybara.reset_sessions! if defined?(Capybara)
-
-    # https://github.com/jonleighton/poltergeist/issues/375
-    page.driver.reset! if defined?(page)
-
-    DatabaseCleaner.clean
-  end
+  config_cleaner { block.call }
 end
