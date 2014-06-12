@@ -23,3 +23,8 @@ end
 And(/^There is answer to that question$/) do
   @answer = create(:answer, question: @question)
 end
+
+And(/^There is a question with answer$/) do
+  @answer = create(:answer)
+end
+
