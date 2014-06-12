@@ -12,12 +12,14 @@ Hello, Sir! This is a challenge application that will test your practical knowle
 
   You need to clone this repository. Please do not fork it, because it would make your code visible to other challengers. We don't want this.
 
-    git clone --origin academy https://github.com/hussar-academy/challenge_app
+    `git clone --origin academy https://github.com/hussar-academy/challenge_app`
 
   If you don't have a GitHub account yet, now is the perfect time to create one. Then create a repository named `challenge_app` and push the code.
 
+    ```
     git remote add origin git@github.com:your-username/challenge_app.git
     git push --set-upstream origin master
+    ```
 
 2. Install ruby
 
