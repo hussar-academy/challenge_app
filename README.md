@@ -57,6 +57,8 @@ Hello, Sir! This is a challenge application that will test your practical knowle
 
 The application is a question and answer site with features similar to [Stack Overflow](http://stackoverflow.com), but it still needs some work.
 
+**Don't worry if you're not able to complete all the features, do as many as you can.** When you're done push your code to your GitHub repository so that we can access it and test. Bonus points for deploying the application to [Heroku](http://heroku.com). Then write us an e-mail at academy@hussa.rs with the links.
+
 ### Features
 
 1. Users need to create profiles to add questions and answers.
@@ -68,27 +70,29 @@ The application is a question and answer site with features similar to [Stack Ov
 7. No one can add new answer to a question that already has an accepted answer.
 8. Users collect points. New users get 100 points for free.
 
-  Hint: Define user.points attribute.
+  Hint: Define `user.points` attribute.
 
 9. When user's answer is accepted he receives 25 points.
 10. Creating a question costs 10 points.
 11. Users can set their names and it should be displayed everywhere instead of e-mail.
 
-  Hint: User profiles are implemented using devise gem. Check its documentation to find out how to handle additional attributes on registration and edit profile pages.
+  Hint: User profiles are implemented using [devise](https://github.com/plataformatec/devise) gem. Check its documentation to find out how to handle additional attributes on registration and edit profile pages.
 
 12. Users can upload avatars which should be automatically scaled to 100x100px size.
 
   Hint: Use a gem that handles file uploads and image manipulation.
 
 13. Once a user reaches 1000 points, she receives Superstar badge that is visible on his profile page.
+14. Question's author receives e-mail notification when someone answers his question.
+15. User receives e-mail notification when his answer is accepted.
 
-### Guidelines
+### Development Guidelines
 
-1. Create atomic, self-containing commits.
-2. If you have any problems ask for help in our public [Chat Room](https://www.hipchat.com/gVsjIkRpD).
-3. Some features are defined in files in `features/features` directory. If you're curious, they're written in Cucumber and this is executable code. You can run it with `bundle exec cucumber` and check if your code satisfies these definitions.
-4.  Don't worry if you're not able to complete all the features, do as many as you can. When you're done push your code to your GitHub repository and deploy the application to [Heroku](http://heroku.com) so that we can access it and test. Then write us an e-mail at academy@hussa.rs with the links.
-
+1. Create small, atomic commits.
+2. Try to use English for everything from variable names to commit messages.
+3. We're using [slim](http://slim-lang.com/) templating engine for views, not ERB which is a default in Ruby world. It's quite easy, but if you don't feel comfortable, feel free to use ERB. The same thing stands for other gems. It's your code, use whatever suits you.
+4. Some features are defined in files in `features/features` directory. If you're curious, they're written in Cucumber and this is executable code. You can run it with `bundle exec cucumber` and check if your code satisfies these definitions.
+5. If you have any problems ask for help in our public [Chat Room](https://www.hipchat.com/gVsjIkRpD).
 
 ## Resources
 
@@ -113,3 +117,9 @@ Here's the list of useful resources that might help you on your journey.
 ### Heroku
 
 * https://devcenter.heroku.com/articles/getting-started-with-rails3
+
+## License
+
+See attached LICENSE.txt file.
+
+Copyright (c) 2014 Monterail.com LLC
