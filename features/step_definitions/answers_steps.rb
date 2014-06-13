@@ -28,3 +28,6 @@ And(/^There is a question with answer$/) do
   @answer = create(:answer)
 end
 
+And(/^I added an answer$/) do
+  @answer = create(:answer)
+end
