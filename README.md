@@ -1,6 +1,6 @@
 # Challenge App
 
-Hello, Sir! This is a challenge application that will test your practical knowledge of following tools:
+Hello, there! This is a challenge application that will test your practical knowledge of following tools:
 
 * Ruby programming language
 * Ruby on Rails web framework
@@ -117,6 +117,10 @@ Here's the list of useful resources that might help you on your journey.
 ### Heroku
 
 * https://devcenter.heroku.com/articles/getting-started-with-rails3
+
+### Other
+
+* https://github.com/monterail/guidelines - Our own set of web development guildelines and best practices
 
 ## License
 
