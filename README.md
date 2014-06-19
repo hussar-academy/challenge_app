@@ -10,7 +10,11 @@ Hello, there! This is a challenge application that will test your practical know
 
 1. Get the code
 
-  You need to clone this repository. Please do not fork it, because it would make your code visible to other challengers. We don't want this.
+  Before you start you need have [git](http://git-scm.com/) installed on your machine. If you're not familiar with it yet, just take a [CodeSchool's free course](https://www.codeschool.com/courses/try-git). It's short and fun.
+
+  When ready, clone this repository. Please do not fork it, because it would make your code visible to other challengers. We don't want this.
+  
+  Issue the following command from the console.
 
     `git clone --origin academy https://github.com/hussar-academy/challenge_app`
 
@@ -31,7 +35,7 @@ Hello, there! This is a challenge application that will test your practical know
 
     `bundle`
 
-  This will install all dependent libraries that are used in the application.
+  The command will install all dependent libraries that are used in the application.
 
 4. Create database
 
@@ -55,9 +59,11 @@ Hello, there! This is a challenge application that will test your practical know
 
 ## Specification
 
-The application is a question and answer site with features similar to [Stack Overflow](http://stackoverflow.com), but it still needs some work.
+The application is a question and answer site with features similar to [Stack Overflow](http://stackoverflow.com) but it still needs some work.
 
 **Don't worry if you're not able to complete all the features, do as many as you can.** When you're done push your code to your GitHub repository so that we can access it and test. Bonus points for deploying the application to [Heroku](http://heroku.com). Then write us an e-mail at academy@hussa.rs with the links.
+
+Most of the listed features can be implemented using core mechanisms of Ruby on Rails, reading the framework's guildelines will surely point you in right directions. Other ones may rely on external libraries (gems).
 
 ### Features
 
@@ -92,7 +98,7 @@ The application is a question and answer site with features similar to [Stack Ov
 2. Try to use English for everything from variable names to commit messages.
 3. We're using [slim](http://slim-lang.com/) templating engine for views, not ERB which is a default in Ruby world. It's quite easy, but if you don't feel comfortable, feel free to use ERB. The same thing stands for other gems. It's your code, use whatever suits you.
 4. Some features are defined in files in `features/features` directory. If you're curious, they're written in Cucumber and this is executable code. You can run it with `bundle exec cucumber` and check if your code satisfies these definitions.
-5. If you have any problems ask for help in our public [Chat Room](https://www.hipchat.com/gVsjIkRpD).
+5. If you have any problems ask for help in our public [Chat Room](https://www.hipchat.com/gVsjIkRpD). We really mean it! There's nothing wrong in seeking advice.
 
 ## Resources
 
@@ -110,6 +116,7 @@ Here's the list of useful resources that might help you on your journey.
 
 ### Git
 
+* https://www.codeschool.com/courses/try-git
 * https://try.github.io
 * https://www.atlassian.com/git/tutorial
 * http://git-scm.com/book
