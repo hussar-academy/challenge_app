@@ -115,7 +115,7 @@ Most of the listed features can be implemented using core mechanisms of Ruby on 
 2. Try to use English for everything from variable names to commit messages.
 3. We're using [slim](http://slim-lang.com/) templating engine for views, not ERB which is a default in Ruby world. It's quite easy, but if you don't feel comfortable, feel free to use ERB. The same thing stands for other gems. It's your code, use whatever suits you.
 4. Some features are defined in files in `features/features` directory. If you're curious, they're written in Cucumber and this is executable code. You can run it with `bundle exec cucumber` and check if your code satisfies these definitions.
-5. If you have any problems ask for help in our public [Chat Room](https://www.hipchat.com/gVsjIkRpD). We really mean it! There's nothing wrong in seeking advice.
+5. If you have any problems ask for help in our public [Chat Room](https://www.hipchat.com/gVsjIkRpD). We really mean it! There's nothing wrong in seeking advice. (Please pay attention to the topic message)
 
 ## Resources
 
